@@ -28,8 +28,8 @@
 
     <div class="container">
       <section id="main_content">
-        <h3>
-<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motivation:</h3>
+        <h1>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motivation:</h1>
 
 <p>Our development team was inspired by the games available within the Google Play Store environment. One of the most popular first person games on the platform is known as Shadowgun VR. In this game you take on the perspective of a soldier in a science fiction environment, but while the environment is pretty it offers no interaction.</p>
 
@@ -37,15 +37,15 @@
 
 <p>Overall we sought to provide a fun proof of concept that expands upon the primitive game market for the Android VR platform.</p>
 
-<h3>
-<a id="description-of-project" class="anchor" href="#description-of-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description of Project:</h3>
+<h1>
+<a id="description-of-project" class="anchor" href="#description-of-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description of Project:</h1>
 
-<p>You take on the role of an initiate of the formidable Talent Team, an elite organization who use supernatural talents to the benefit of mankind. You are presented with three unique scenes to test and develop your newly discovered abilities. You will begin your journey by using telekinetic abilities to assist Professor. Javier. You will then travel to the school’s soccer stadium and use a force shield to push projectiles into the mystical goal cube. Lastly his college Wesley will ask for some assistance in the laser chamber.</p>
+<p>You take on the role of an initiate of the formidable Talent Team, an elite organization who use supernatural talents to the benefit of mankind. You are presented with three unique scenes to test and develop your newly discovered abilities. You will begin your journey by using telekinetic abilities to assist Professor. Javier. You will then travel to the school’s soccer stadium and use a force shield to push projectiles into the mystical goal cube. Lastly his colleague Wesley will ask for some assistance in the laser chamber.</p>
 
-<h3>
-<a id="technical-explanation-of-the-project--each-developer" class="anchor" href="#technical-explanation-of-the-project--each-developer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Explanation of the Project ( Each Developer)</h3>
+<p>Technical Explanation of the Project ( Each Developer)</p>
 
-<p>Jason Ortiz : Telekinesis</p>
+<h2>
+<a id="jason-ortiz--telekinesis" class="anchor" href="#jason-ortiz--telekinesis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jason Ortiz : Telekinesis</h2>
 
 <p>To create the effect of telekinesis, the desired models in the room were given Rigidbody components, mesh colliders, and each had the Unity standard asset script DragRidgidbody.cs, which was fine-tuned by modifying the private variables to create a more authentic “telekinesis” experience. To trigger the voice overs, scripts were written that invoked functions when the objects to be moved collided with the trigger colliders. For example, when all four books are placed on any bookshelf, which contained trigger colliders, the voice over would start. To allow the VR user to move around, the Unity standard asset “RigidBodyFPSController” was made the parent of the Google Cardboard “Cardboard Main,” so users can enter input to move while wearing the Cardboard to control their vision.</p>
 
@@ -82,7 +82,8 @@ Publisher: Aquarius Max
 The Victorian Reading Room
 <a href="https://3dwarehouse.sketchup.com/model.html?id=95c2fec87237f086bbe2cdc0eff45abb">https://3dwarehouse.sketchup.com/model.html?id=95c2fec87237f086bbe2cdc0eff45abb</a></p>
 
-<p>Patrick Poplawska: Force Shield</p>
+<h2>
+<a id="patrick-poplawska-force-shield" class="anchor" href="#patrick-poplawska-force-shield" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Patrick Poplawska: Force Shield</h2>
 
 <p>The force-shield level is fundamentally a physics sandbox that makes heavy use of colliders. The hardest challenge was modifying a script used for turret tracking and combining it with a shooting script. These scripts allow the turrets the follow the desired target (within a certain specified range) and they will then instantiate spheres that will act as the “soccer balls” of the level. The shield model proved rather tricky, and due to its unique properties it was difficult to get a consistent collision detector to behave. As a result, the collision had to primarily handled by the target of the “balls” and the “balls” themselves. The win condition is to use the force shield to slow the projectile, and then either kick it (with the shield toggle) or push it to the center cube. A set number of collisions of the cube (only projectiles will count) will cause a script to fire that will lower the north facing wall, thereby revealing your transport to the main base.</p>
 
@@ -108,7 +109,8 @@ Publisher: Andy Lovett
 Publisher: Damaged Grounds
 <a href="https://www.assetstore.unity3d.com/en/#!/content/20098">https://www.assetstore.unity3d.com/en/#!/content/20098</a></p>
 
-<p>Brenton Lin: Laser Eyesight</p>
+<h2>
+<a id="brenton-lin-laser-eyesight" class="anchor" href="#brenton-lin-laser-eyesight" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Brenton Lin: Laser Eyesight</h2>
 
 <p>The premise of this level is that the VR user is testing out their apparent laser vision, the user is placed in a corn maze like environment where they will have to find and eliminate a variety of targets (rigged with various behaviours to increase difficulty and interactivity) to open the teleporter back to the main room. There was much difficulty initially in getting laser reflection within the scene to behave properly; eventually I found a javascript for reflection and modified it for the functionality I needed. After that I was able to focus on designing the level (I could tag objects as “reflect” to interact with the laser) with interesting puzzles. 
     The level aesthetic was influenced by games like portal and half-life, the win condition being the destruction of all 6 spherical targets; which will spawn a teleporter back to the main room.</p>
@@ -140,10 +142,16 @@ Publisher: Maurice_B
 <a href="http://forum.unity3d.com/threads/free-bouncing-laser-script.286967/">http://forum.unity3d.com/threads/free-bouncing-laser-script.286967/</a></p>
 
 <p>Explosions:
-Publisher:</p>
+Publisher: GAPH
+<a href="https://www.assetstore.unity3d.com/en/#!/content/30102">https://www.assetstore.unity3d.com/en/#!/content/30102</a></p>
 
 <p>SFX:
-Publisher:</p>
+Publisher: Little Robot Sound Factory
+<a href="https://www.assetstore.unity3d.com/en/#!/content/32830">https://www.assetstore.unity3d.com/en/#!/content/32830</a></p>
+
+<p>Sky Box:
+Publisher: Escape Velocity;
+<a href="https://www.assetstore.unity3d.com/en/#!/content/52928">https://www.assetstore.unity3d.com/en/#!/content/52928</a></p>
       </section>
     </div>
 
